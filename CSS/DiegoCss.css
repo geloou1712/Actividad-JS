@@ -98,3 +98,27 @@
     color: rgb(211, 3, 3);
     font-size: 150%;
 }
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .menu-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: purple;
+        color: white;
+        cursor: pointer;
+    }
+
+    .menu-navegacion {
+        display: none;
+    }
+
+    .menu-navegacion.menu-abierto {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
